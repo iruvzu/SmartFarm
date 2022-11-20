@@ -38,11 +38,15 @@ class ConnectedThread extends Thread {
             try {
                 // Read from the InputStream
                 bytes = mmInStream.available();
-                if (bytes != 0) {
+                if (bytes != 0) { //0이 아닐 때 0 보다 클 때
                     buffer = new byte[1024];
                     SystemClock.sleep(100); //pause and wait for rest of data. Adjust this depending on your sending speed.
                     bytes = mmInStream.available(); // how many bytes are ready to be read?
                     bytes = mmInStream.read(buffer, 0, bytes); // record how many bytes we actually read
+
+                    /*for (int i = 0; i < bytes; i++) {
+                        byte tempByte = bytes[i];
+                    }*/
                 }
             } catch (IOException e) {
                 e.printStackTrace();

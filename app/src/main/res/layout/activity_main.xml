@@ -84,16 +84,29 @@
             android:layout_marginVertical="5dp"
             android:gravity="center_vertical|center">
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="0dp"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:background="@drawable/round"
                 android:textSize="10dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
                 android:text="★현재 습도 :"/>
 
+            <TextView
+                android:id="@+id/plantmoisture1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical|center"
+                android:text="00"/>
+
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="0dp"
@@ -104,13 +117,13 @@
             android:gravity="center_vertical|center">
 
             <Button
-                android:id="@+id/btn_send"
+                android:id="@+id/btn_send1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/circle"
                 android:textSize="30dp"
                 android:textColor="#FFFFFF"
-                android:onClick="onClickButtonSend"
+                android:onClick="onClickButtonSend1"
                 android:gravity="center_vertical|center"
                 android:text="★" />
 
@@ -149,14 +162,26 @@
             android:layout_marginVertical="5dp"
             android:gravity="center_vertical|center">
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="0dp"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:background="@drawable/round"
                 android:textSize="10dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
                 android:text="★현재 습도 :"/>
+
+            <TextView
+                android:id="@+id/plantmoisture2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical|center"
+                android:text="00"/>
 
         </LinearLayout>
 
@@ -169,13 +194,15 @@
             android:gravity="center_vertical|center">
 
             <Button
+                android:id="@+id/btn_send2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/circle"
                 android:textSize="30dp"
                 android:textColor="#FFFFFF"
+                android:onClick="onClickButtonSend2"
                 android:gravity="center_vertical|center"
-                android:text="★"/>
+                android:text="★" />
 
         </LinearLayout>
 
@@ -212,14 +239,26 @@
             android:layout_marginVertical="5dp"
             android:gravity="center_vertical|center">
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="0dp"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:background="@drawable/round"
                 android:textSize="10dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
                 android:text="★현재 습도 :"/>
+
+            <TextView
+                android:id="@+id/plantmoisture3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical|center"
+                android:text="00"/>
 
         </LinearLayout>
 
@@ -232,13 +271,15 @@
             android:gravity="center_vertical|center">
 
             <Button
+                android:id="@+id/btn_send3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/circle"
                 android:textSize="30dp"
                 android:textColor="#FFFFFF"
+                android:onClick="onClickButtonSend3"
                 android:gravity="center_vertical|center"
-                android:text="★"/>
+                android:text="★" />
 
         </LinearLayout>
 
@@ -251,7 +292,7 @@
 
         <Button
             android:id="@+id/btn_paired"
-            android:layout_width="100dp"
+            android:layout_width="141dp"
             android:layout_height="50dp"
             android:background="@drawable/bluetooth_round"
             android:gravity="center_vertical|center"
@@ -260,17 +301,24 @@
             android:textColor="#FFFFFF"
             android:textSize="10dp" />
 
-        <Button
-            android:id="@+id/btn_search"
-            android:layout_width="100dp"
+        <TextView
+            android:layout_width="134dp"
             android:layout_height="50dp"
-            android:background="@drawable/bluetooth_round"
+            android:layout_weight="1"
             android:gravity="center_vertical|center"
-            android:onClick="onClickButtonSearch"
-            android:text="SEARCH"
-            android:textColor="#FFFFFF"
+            android:text="★현재 조도 상태 :"
+            android:textColor="#000000"
             android:textSize="10dp" />
 
+        <TextView
+            android:id="@+id/plantbrighter"
+            android:layout_width="134dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"
+            android:text="00"
+            android:textColor="#000000"
+            android:textSize="10dp" />
     </LinearLayout>
 
     <TextView
