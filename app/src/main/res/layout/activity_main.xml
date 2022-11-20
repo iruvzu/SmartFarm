@@ -31,7 +31,7 @@
             android:layout_weight="2"
             android:textColor="#FFFFFF"
             android:textAlignment="center"
-            android:text="장치"/>
+            android:text="식물"/>
 
         <TextView
             android:layout_width="0dp"
@@ -71,9 +71,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/round"
                 android:gravity="center_vertical|center"
-                android:text="★몬스테라"
+                android:text="🌱몬스테라1"
                 android:textColor="#FFFFFF"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
@@ -88,20 +88,20 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/round"
-                android:textSize="10dp"
+                android:background="@drawable/rightround"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
-                android:text="★현재 습도 :"/>
+                android:text="💦현재 습도 :"/>
 
             <TextView
                 android:id="@+id/plantmoisture1"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/round"
-                android:textSize="10dp"
-                android:textColor="#FFFFFF"
+                android:background="@drawable/leftround"
+                android:textSize="15dp"
+                android:textColor="#0C70F2"
                 android:gravity="center_vertical|center"
                 android:text="00"/>
 
@@ -125,7 +125,7 @@
                 android:textColor="#FFFFFF"
                 android:onClick="onClickButtonSend1"
                 android:gravity="center_vertical|center"
-                android:text="★" />
+                android:text="💧" />
 
         </LinearLayout>
 
@@ -148,10 +148,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/round"
-                android:textSize="10dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
-                android:text="★몬스테라"/>
+                android:text="🌱몬스테라2"/>
 
         </LinearLayout>
 
@@ -166,20 +166,20 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/round"
-                android:textSize="10dp"
+                android:background="@drawable/rightround"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
-                android:text="★현재 습도 :"/>
+                android:text="💦현재 습도 :"/>
 
             <TextView
                 android:id="@+id/plantmoisture2"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/round"
-                android:textSize="10dp"
-                android:textColor="#FFFFFF"
+                android:background="@drawable/leftround"
+                android:textSize="15dp"
+                android:textColor="#0C70F2"
                 android:gravity="center_vertical|center"
                 android:text="00"/>
 
@@ -202,7 +202,7 @@
                 android:textColor="#FFFFFF"
                 android:onClick="onClickButtonSend2"
                 android:gravity="center_vertical|center"
-                android:text="★" />
+                android:text="💧" />
 
         </LinearLayout>
 
@@ -225,10 +225,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/round"
-                android:textSize="10dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
-                android:text="★몬스테라"/>
+                android:text="🌱몬스테라3"/>
 
         </LinearLayout>
 
@@ -243,20 +243,20 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/round"
-                android:textSize="10dp"
+                android:background="@drawable/rightround"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical|center"
-                android:text="★현재 습도 :"/>
+                android:text="💦현재 습도 :"/>
 
             <TextView
                 android:id="@+id/plantmoisture3"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@drawable/round"
-                android:textSize="10dp"
-                android:textColor="#FFFFFF"
+                android:background="@drawable/leftround"
+                android:textSize="15dp"
+                android:textColor="#0C70F2"
                 android:gravity="center_vertical|center"
                 android:text="00"/>
 
@@ -279,7 +279,7 @@
                 android:textColor="#FFFFFF"
                 android:onClick="onClickButtonSend3"
                 android:gravity="center_vertical|center"
-                android:text="★" />
+                android:text="💧" />
 
         </LinearLayout>
 
@@ -306,9 +306,9 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center_vertical|center"
-            android:text="★현재 조도 상태 :"
+            android:text="💡현재 조도 상태 :"
             android:textColor="#000000"
-            android:textSize="10dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/plantbrighter"
@@ -317,14 +317,14 @@
             android:layout_weight="1"
             android:gravity="center_vertical|center"
             android:text="00"
-            android:textColor="#000000"
-            android:textSize="10dp" />
+            android:textColor="#FF0000"
+            android:textSize="15dp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/text_status"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="STATUS"
         android:textSize="20dp" />
@@ -332,7 +332,7 @@
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="264dp"
+        android:layout_height="317dp"
         app:layout_constraintLeft_toLeftOf="@id/btn_paired"
         app:layout_constraintRight_toRightOf="@id/btn_paired"
         app:layout_constraintTop_toBottomOf="@id/btn_paired" />
